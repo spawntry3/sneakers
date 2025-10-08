@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Sneakers — Профиль</title>
+    <link rel="stylesheet" href="./prof.css">
+    <link rel="icon" href="../assets/logo.jpg">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <div class="bg-full">
+        <header>
+            <div class="left-header" onclick="window.location.href='../'">
+                <img src="../assets/logo.jpg" alt="logo">
+                <div class="left-header2">
+                    <h1>REACT SNEAKERS</h1>
+                    <h2>Магазин лучших кроссовок</h2>
+                </div>
+            </div>
+
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="right-header" id="navMenu">
+                <div class="right-header2">
+                    <img src="../assets/cart.svg" alt="cart">
+                    <a id="balance">0 тг.</a>
+                </div>
+                <div class="right-header2" onclick="window.location.href='../fav/favorite.html'">
+                    <img src="../assets/favorite.svg" alt="favorite">
+                    <a>Закладки</a>
+                </div>
+                <div class="right-header2" onclick="location.reload()">
+                    <img src="../assets/profile.svg" alt="profile">
+                    <a>Профиль</a>
+                </div>
+            </div>
+        </header>
+
+        <hr>
+        
+        <section class="orders-container">
+            <img src="../assets/cry-emoji.png" alt="cry">
+            <h1>У вас нет заказов</h1>
+            <p>Здесь пусто</p>
+            <div class="back-button" onclick="window.location.href='../'">
+                <img src="../assets/back-strelka.svg" alt="">
+                <a href="../">Вернуться назад</a>
+            </div>
+        </section>
+
+        <section class="buys">
+            <div class="buys-head">
+                <div class="goback" onclick="window.location.href='../'">
+                    <img src="assets/goback.svg" alt="backbtn">
+                </div>
+                <h1>Покупки</h1>
+            </div>
+            <div class="buy-cards">
+            </div>
+        </section>
+
+        <div class="cart-overlay hidden"></div>
+        <div class="cart-modal hidden">
+            <h2>Корзина</h2>
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+                <div class="row">
+                    <span>Итого:</span>
+                    <b class="cart-total">0 тг.</b>
+                </div>
+                <div class="row">
+                    <span>Налог 5%:</span>
+                    <b class="cart-tax">0 тг.</b>
+                </div>
+                <button class="checkout-btn">Оформить заказ →</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

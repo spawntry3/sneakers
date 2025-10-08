@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.jpg">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="bg-full">
+        <header>
+            <div class="left-header" onclick="location.reload()">
+                <img src="./assets/logo.jpg" alt="logo">
+                <div class="left-header2">
+                    <h1>REACT SNEAKERS</h1>
+                    <h2>Магазин лучших кроссовок</h2>
+                </div>
+            </div>
+
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="ri-header" id="navMenu">
+                <div class="right-header2">
+                    <img src="./assets/cart.svg" alt="cart">
+                    <a id="balance">1205 тг.</a>
+                </div>
+                <div class="right-header2" onclick="window.location.href='./fav/favorite.html'">
+                    <img src="./assets/favorite.svg" alt="favorite">
+                    <a>Закладки</a>
+                </div>
+                <div class="right-header2" onclick="window.location.href='./prof/profile.html'">
+                    <img src="./assets/profile.svg" alt="profile">
+                    <a>Профиль</a>
+                </div>
+            </div>
+        </header>
+
+        <hr>
+
+        <section class="first">
+            <div class="first-left">
+                <div class="first-left-collaba">
+                    <img class="collaba-png" src="./assets/collaba.png" alt="collaba">
+                </div>
+                <div class="first-left-info">
+                    <h1><span>Stan Smith</span>,<br>Forever!</h1>
+                    <a href="#second">КУПИТЬ</a>
+                </div>
+            </div>
+            <div class="first-right">
+                <div class="slider-wrapper">
+                    <img class="slide-image" src="./assets/first-bg.png" alt="">
+                    <img class="slide-image" src="./assets/first-bg2.png" alt="">
+                </div>
+                <div class="slider-dots">
+                    <div class="dot active-dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="second">
+            <div class="second-header">
+                <h1>Все кроссовки</h1>
+                <div class="search">
+                    <img src="./assets/search.svg" alt="">
+                    <input type="text" placeholder="Поиск...">
+                </div>
+            </div>
+            <div class="cards">
+                
+            </div>
+        </section>
+
+        <div class="cart-overlay hidden"></div>
+        <div class="cart-modal hidden">
+            <h2>Корзина</h2>
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+                <div class="row">
+                    <span>Итого:</span>
+                    <b class="cart-total">1205 тг.</b>
+                </div>
+                <div class="row">
+                    <span>Налог 5%:</span>
+                    <b class="cart-tax">1205 тг.</b>
+                </div>
+                <button class="checkout-btn">Оформить заказ →</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
